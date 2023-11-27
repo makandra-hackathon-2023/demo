@@ -4,11 +4,7 @@
     "cpus": 4
   },
   "waitFor": "onCreateCommand",
-  "updateContentCommand": [
-    "bundle install",
-    "bundle exec rails db:setup",
-    "bundle exec rails restart"
-  ],
+  "updateContentCommand": "bundle install",
   "postCreateCommand": "",
   "postAttachCommand": {
     "server": "rails server"
